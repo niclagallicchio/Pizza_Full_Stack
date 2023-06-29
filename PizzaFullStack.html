@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Full Stack | Per veri Nerd</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat&family=Chakra+Petch:wght@300;400;600&family=Indie+Flower&family=Kalam:wght@300;400&family=Sedgwick+Ave+Display&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./PizzaFullStack.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./pizza-full-stack-high-resolution-color-logo.png"
+                    alt="logopizzeria" width="200"></a>
+            <button class="navbar-toggler start" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="fa-solid fa-gamepad icona"></i> PREMI START
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#storiaprincipale">STORIA
+                                PRINCIPALE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personaggi">PERSONAGGI</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#missionisecondarie" id="offcanvasNavbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                MISSIONI SECONDARIE
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#pinsa">Super Pinsa Bros</a></li>
+                                <li><a class="dropdown-item" href="#panzerotti">Call of Panzerotti</a></li>
+                                <li><a class="dropdown-item" href="#dolci">Sniper Dolci</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#partita">PRENOTA LA TUA PARTITA</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Indizi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--INTRODUZIONE-->
+    <header>
+        <div class="d-flex">
+            <img src="https://img.freepik.com/premium-vector/pixel-art-pizza-with-pepperoni-cheese-bit-game-icon_360488-109.jpg?w=2000"
+                class="pizza-pixel" alt="pizzapixel">
+            <div>
+                <h1>SCOPRI TUTTI I NOSTRI LIVELLI</h1>
+                <h2>Vuoi affrontare la storia principale o iniziare con le missioni secondarie?</h2>
+                <h4>Scopri il nostro vasto menù e scegli accuratamente, senza dimenticare di salvare prima di
+                    abbandonare il gioco!</h4>
+            </div>
+        </div>
+    </header>
+    <!--STORIA PRINCIPALE-->
+    <div id="storiaprincipale" class="d-flex storia-principale">
+        <div class="storia">
+            <h3>STORIA PRINCIPALE</h3>
+            <h4>Nella storia principale il protagonista, cioè tu, avrai il compito di scegliere il livello di bontà
+                delle pizze:</h4>
+            <h5>Livello I:</h5>
+            <p>mozzarella fior di latte in cottura, pomodorino secco, granella di pistacchio, capocollo di Martina
+                Franca, burrata di Andria da 300g.</p>
+            <h5>Livello II:</h5>
+            <p>mozzarella fior di latte e gorgonzola in cottura, pancetta arrotolata di Martina Franca, pomodoro al filo
+                caramellato, stracciatella affumicata, filamenti di peperoncino e granella di nocciola.</p>
+            <h5>Livello III:</h5>
+            <p> crema di ricotta di bufala, mozzarella fior di latte, prosciutto crudo di Parma e carciofi
+                grigliati.</p>
+            <h5>Livello IV:</h5>
+            <p>mozzarella fior di latte in cottura, stracchino, letto di verdure fresche di stagione (previa
+                disponibilità), scampi*, gamberi rossi*, carpaccio di salmone* (anche a scelta), mela verde, pepe rosa,
+                mousse di pomodoro.</p>
+            <h5>Livello V:</h5>
+            <p>mozzarella fior di latte in cottura, sashimi di salmone* marinato al frutto della passione, crema
+                di ricotta di bufala aromatizzata al pistacchio, melograno e granella di pistacchio.</p>
+            <h5>Livello VI:</h5>
+            <p>filetto di tonno*, pesto di zucchine e mandorle, mozzarella di bufala e datterino giallo.</p>
+            <h5>Livello VII:</h5>
+            <p>mozzarella fior di latte in cottura, pomodoro al filo caramellato, funghi cardoncelli
+                trifolati,straccetto di entrocôte, burrata affumicata.</p>
+            <h5>Livello VIII:</h5>
+            <p>base ciccio, mousse di pomodoro (di stagione), mozzarella di bufala, origano e basilico</p>
+            <h5>Livello IX:</h5>
+            <p>mozzarella in cottura, stracciatella, songino, mazzancolle* croccante, maionese al lime, salsa chili,
+                anacardi e semi di sesamo nero</p>
+            <h5>Livello X:</h5>
+            <p>mozzarella fior di latte in cottura, stracchino, bresaola, cialda di Parmigiano e zucchina fresca
+                marinata.</p>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-12">
+                    <!--Carosello 1-->
+                    <div id="carouselExampleCaptions" class="carousel slide carosello" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/10/nero-300x200.jpg"
+                                    class="d-block w-100" alt="livelloI">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello I</h8>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/11/scarlatto-300x200.jpg"
+                                    class="d-block w-100" alt="livelloII">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello II</h8>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/11/Giotto-15-novembre-8-300x200.jpg"
+                                    class="d-block w-100" alt="livelloIII">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello III</h8>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/11/corallo-300x200.jpg"
+                                    class="d-block w-100" alt="livelloIV">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello IV</h8>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/11/AQUAMARINA-300x200.jpg"
+                                    class="d-block w-100" alt="livelloV">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello V</h8>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!--Carosello 2-->
+                    <div id="carouselExampleCaptions2" class="carousel slide carosello2" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/11/VIOLA-300x200.jpg"
+                                    class="d-block w-100" alt="livelloVI">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello VI</h8>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/11/VERMIGLIO-300x200.jpg"
+                                    class="d-block w-100" alt="livelloVII">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello VII</h8>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/11/ecru-300x200.jpg"
+                                    class="d-block w-100" alt="livelloVIII">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello VIII</h8>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/11/3f68fb75-bd61-4e67-8e30-324516c73725-300x225.jpg"
+                                    class="d-block w-100" alt="livelloIX">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello IX</h8>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://giottopizzeria.it/menu-digitale/wp-content/uploads/2022/11/malva-300x200.jpg"
+                                    class="d-block w-100" alt="livelloX">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h8 class="text-dark bg-light">Livello X</h8>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PERSONAGGI-->
+    <div class="d-flex storia-principale" id="personaggi">
+        <div class="storia">
+            <h3>PERSONAGGI:</h3>
+            <h4>I personaggi di quest'avventura sono principalmente quattro:</h4>
+            <div class="row row-cols-1 row-cols-md-4 g-5">
+                <div class="col">
+                    <div class="card text-bg-info">
+                        <img src="https://www.spaziogames.it/images/images/2022/11/super-mario-bros-il-film-peach-52927.768x432.jpg"
+                            class="card-img-top" alt="immaginediPeach">
+                        <div class="card-body">
+                            <h5 class="card-title">Miss Nicla, in arte Principessa Peach</h5>
+                            <p class="card-text text-white">Fondatrice della pizzeria Pizza Full Stack, ideatrice del
+                                sito web e dei nomi delle specialità.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-danger">
+                        <img src="./mario.png" class="card-img-top" alt="immaginediMario">
+                        <div class="card-body">
+                            <h5 class="card-title">Mister Alex, in arte Mario</h5>
+                            <p class="card-text text-white">Cofondatore nerd esemplare che ha ispiratore il tema della
+                                pizzeria.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-success">
+                        <img src="./luigi.png" class="card-img-top" alt="immaginediLuigi">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">Mister Bob, in arte Luigi</h5>
+                            <p class="card-text text-white">Pizzaiolo con capacità immani, capace di impastare e giocare
+                                al
+                                pc contemporaneamente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-toadette">
+                        <img src="https://bleedingcool.com/wp-content/uploads/2021/03/Toadette-Nintendo-1200x628.jpg"
+                            class="card-img-top" alt="immaginediToadette">
+                        <div class="card-body">
+                            <h5 class="card-title">Miss Mariachiara, in arte Toadette</h5>
+                            <p class="card-text text-white">Pasticciera creatrice di dolci dalla forma più strana ma dal
+                                sapore genuino.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex storia-principale" id="missionisecondarie">
+        <div class="storia">
+            <h3>MISSIONI SECONDARIE:</h3>
+            <h4>Nel caso in cui la storia principale non ti sia bastata, ecco una lista di missioni secondarie che
+                potrai affrontare da solo o in cooperativa:</h4>
+            <div class="container p-3">
+                <div class="row">
+                    <div class="col-12 d-flex">
+                        <div class="card text-bg-dark w-100 pinsa" id="pinsa">
+                            <img src="https://cdn.ilclubdellericette.it/wp-content/uploads/2019/08/pinsa-fatta-in-casa-790x500.jpg"
+                                class="card-img" alt="esempiopinsa">
+                            <div class="card-img">
+                                <h5 class="card-title text-white p-2">Super Pinsa Bros </h5>
+                                <p class="card-text text-white p-2">Pinsa romana, lievitata 72 ore, croccante e leggera.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-dark w-100 pinsa" id="panzerotti">
+                            <img src="https://www.fattoincasadabenedetta.it/wp-content/uploads/2020/04/PANZEROTTI-PUGLIESI-sito-stock.jpg"
+                                class="card-img" alt="esempiopanzerotto">
+                            <div class="card-img">
+                                <h5 class="card-title text-white p-2">Call of Panzerotti</h5>
+                                <p class="card-text text-white p-2">Panzerotti fritti (alternativamente al forno, per le
+                                    bestie di Satana)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-dark w-100 pinsa" id="dolci">
+                            <img src="https://www.fattoincasadabenedetta.it/wp-content/uploads/2018/11/Tortino-ante-Sito-scaled.jpg"
+                                class="card-img" alt="esempiodolce">
+                            <div class="card-img">
+                                <h5 class="card-title text-white p-2">Sniper Dolci</h5>
+                                <p class="card-text text-white p-2">Tortino al cioccolato, Cheesecake, Tiramisù. Hai
+                                    solo l'imbarazzo della scelta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="storia-principale" id="partita">
+        <div class="storia">
+            <h3>PRENOTA LA TUA PARTITA</h3>
+            <h4>Compila il form qui sotto e non dimenticare di selezionare il numero di partecipanti alla partita, l'orario e la data. Riceverai una e-mail di conferma di prenotazione il prima possibile. Per qualsiasi altra informazione contattaci allo 080 3556565.</h4>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputnome" class="form-label"></label>
+                  <input type="text" class="form-control" id="inputnome" placeholder="Nome">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label"></label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputtelefono" class="form-label"></label>
+                    <input type="tel" class="form-control" id="inputtelefono" placeholder="Telefono">
+                </div>
+                <div class="col-12">
+                    <label for="inputnumber4" class="form-label"></label>
+                    <input type="number" class="form-control" id="inputnumber4" placeholder="Partecipanti">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputdataora" class="form-label">Seleziona giorno e orario</label>
+                  <input type="datetime-local" for="inputdataora">
+                  
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Voglio iscrivermi alla Newsletter per ricevere sconti e rimanere aggiornati sugli eventi della pizzeria
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success">Invia richiesta</button>
+                </div>
+              </form>
+        </div>
+    </div>
+    <!--GALLERIA-->
+    <div class="container">
+
+        <h2 class="fw-light text-center text-lg-start mt-4 mb-0">Gallery da leccarsi i baffi</h2>
+      
+        <hr class="mt-2 mb-5">
+      
+        <div class="row text-center text-lg-start">
+      
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://media-assets.lacucinaitaliana.it/photos/61fae797dd8dec89d6bd0345/4:3/w_1064,h_798,c_limit/aaaaa3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://images.dissapore.com/wp-content/uploads/2020/03/pizza-salsiccia-e-friarielli-800x600.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+           
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://www.50toppizza.it/wp-content/uploads/2022/03/Giotto.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://www.giottopizzeria.it/assets/img/gallery/3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/b4/fb/b0/la-nostra-oro.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://menu.sluurpy.it/foto-g/195758/3012588.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            
+          </div>
+        </div>
+      </div>
+      <!--CONTATTI-->
+      <div class="container-fluid px-5 my-5">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-sm-6 d-none d-sm-block bg-image"></div>
+                  <div class="col-sm-6 p-4">
+                    <div class="text-center">
+                      <div class="h3 fw-light">Contattaci</div>
+                      <p class="mb-4 text-muted">Se vuoi organizzare una festa a tema NERD non esitare!</p>
+                    </div>
+      
+                    <!-- * * * * * * * * * * * * * *
+                // * * SB Forms Contact Form * *
+                // * * * * * * * * * * * * * * *
+      
+                // This form is pre-integrated with SB Forms.
+                // To make this form functional, sign up at
+                // https://startbootstrap.com/solution/contact-forms
+                // to get an API token!
+                -->
+      
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+      
+                      <!-- Name Input -->
+                      <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                        <label for="name">Nome</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                      </div>
+      
+                      <!-- Email Input -->
+                      <div class="form-floating mb-3">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                        <label for="emailAddress">Indirizzo Email</label>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                      </div>
+      
+                      <!-- Message Input -->
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <label for="message">Messaggio</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                      </div>
+      
+                      <!-- Submit success message -->
+                      <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                          <div class="fw-bolder">Form submission successful!</div>
+                          <p>To activate this form, sign up at</p>
+                          <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                      </div>
+      
+                      <!-- Submit error message -->
+                      <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                      </div>
+      
+                      <!-- Submit button -->
+                      <div class="d-grid">
+                        <button class="btn btn-success btn-lg" id="submitButton" type="submit">Invio</button>
+                      </div>
+                    </form>
+                    <!-- End of contact form -->
+      
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <h5 class="text-white crediti">Created by Nicla/Principessa Peach</h5>
+    </footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
